@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>File Server</title>
+</head>
+<body>
+    <div class="title-container">
+        <div class="title-words">
+            <div class="title"><h1 class="title">Montaño</h1></div>
+        </div>
+    </div>
+    <div class="subheading">
+        <h2>Welcome to the Montaño Family File Server</h2>
+    </div>
+    <div class="login-container">
+    <button class="main-button" onclick="document.getElementById('id01').style.display='block'">Login</button>
+    </div>
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close Login">&times;</span>
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <img src="./img/login.png" alt="Avatar" class="avatar" width="30%" height="30%">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Email: </b></label>
+          <input type="text" placeholder="Enter Email" name="uname" required>
+    
+          <label for="psw"><b>Password: </b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+    
+          <button class="login-button" type="submit">Login</button>
+          <label class="remember-me">
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label></br></br></br></br>
+        </div>
+        <div class="container-one" style="background-color:#585858">
+            <button class="cancel-button" type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw"><a href="#">Forgot password?</a></span>
+          </div>
+        </form>
+      </div>
+<script src="./script.js"></script>
+</body>
+</html>
