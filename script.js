@@ -8,10 +8,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
-    if (uname === "alexjoelmontano@gmail.com" || uname === "Alexjoelmontano@gmail.com") {
-        alert("Welcome");
-    }
-    else {
-        alert("Unknown Username or Password");
-    }
