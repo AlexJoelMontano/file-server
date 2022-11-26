@@ -31,11 +31,3 @@ function openNav(navName, elmnt, color) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click(); 
-
-
-let login = document.getElementsByClassName("login-button");
-let user = document.getElementsByClassName("uname");
-
-if (user === null && login === true){
-    alert("Please enter a username");
-}

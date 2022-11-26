@@ -65,6 +65,7 @@ h1.title.water {
     background-size: cover;
     background-position-y: 75%;
 }
+
 h1.title.wind {
     font-size: 5vw;
     font-family: Segoe UI, "Rockwell Extra Bold";
@@ -148,21 +149,26 @@ h1.title.earth {
 }
 /* Style the tab buttons */
 .tablink {
-    background-color: #555;
+    background-color: #222222;   
     color: white;
+    font-family: 'Rajdhani', sans-serif;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    font-size: 17px;
+    font-size: 1.45vw;
+    font-weight: 600;
+    letter-spacing: 3px;
     width: 25%;
+    
 }
 
 /* Change background color of buttons on hover */
 .tablink.fire:hover {    
     background-image: url("../img/fire.gif");
     background-position-y: 62%;
+    text-shadow: 1px 1px 2px rgb(255, 0, 0);
 }
 .tablink.water:hover {
     background-image: url("../img/beach-mov.gif");
@@ -172,10 +178,13 @@ h1.title.earth {
 .tablink.wind:hover {
     background-image: url("../img/smoke.gif");
     background-size: cover;
+    text-shadow: 1px 1px 2px rgb(56, 56, 56);
 }
 .tablink.earth:hover {
     background-image: url("../img/crack-earth.gif");
     background-blend-mode: hue rgb(5, 45, 5);
+    color:white;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
 
 }
 
@@ -185,6 +194,7 @@ h1.title.earth {
     display: none;
     padding: 50px;
     text-align: center;
+  
 }
 
 /* Style each tab content individually */
@@ -205,7 +215,15 @@ h1.title.earth {
     justify-content: center;
     background-image: url("../img/water-texture.jpg");
     background-size: cover;
+    animation: windMove 15s infinite;
 }
+@keyframes windMove {
+    50% {
+      -webkit-filter: grayscale(100%); 
+      filter: grayscale(100%);
+    }
+  }
+
 #videos {
     justify-content: center;
     background-image: url("../img/spin.gif");
