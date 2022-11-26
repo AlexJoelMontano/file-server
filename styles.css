@@ -140,7 +140,7 @@ h1.title {
         flex-wrap: wrap;
         padding-inline: 8px;
     }
-    a {
+    a.forgot {
         color: rgb(110, 152, 231);
         font-size: 1.4vw;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -160,6 +160,7 @@ h1.title {
         border-radius: 4px;
         cursor: pointer;
     }
+    /* background affect on over*/
     .main-button:hover {
         background-image: url("./img/beach-mov.gif");
         background-position-y: 75%;
@@ -185,4 +186,8 @@ h1.title {
     .remember-me {
         font-size: 1.25vw;
         color:#f5f5f5eb
+    }
+    a {
+        text-decoration: none;
+        color:inherit;
     }

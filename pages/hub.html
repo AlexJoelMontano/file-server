@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./page-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&family=Rubik+Distressed&family=Rubik+Glitch&display=swap" rel="stylesheet">  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>File HUB</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <div id="files" class="tabcontent">
+          <div class="title-words fire">
+            <div class="title fire"><h1 class="title fire">Montaño</h1></div>
+        </div>
+          </div>
+          
+          <div id="music" class="tabcontent">
+            <div class="title-words wind">
+              <div class="title wind"><h1 class="title wind">Montaño</h1></div>
+          </div>
+          </div>
+          
+          <div id="photo" class="tabcontent">
+            <div class="title-words water">
+              <div class="title water"><h1 class="title water">Montaño</h1></div>
+          </div>
+          </div>
+          
+          <div id="videos" class="tabcontent">
+            <div class="title-words earth">
+              <div class="title earth"><h1 class="title earth">Montaño</h1></div>
+          </div>
+          </div>
+          <button class="tablink fire" onclick="openNav('files', this, '#300000')" id="defaultOpen">Files</button>
+          <button class="tablink wind" onclick="openNav('music', this, '#2e3241')">Music</button>
+          <button class="tablink water" onclick="openNav('photo', this, '#000048')">Photos</button>
+          <button class="tablink earth" onclick="openNav('videos', this, '#001c0a')">Videos</button>    
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
