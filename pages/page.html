@@ -36,10 +36,51 @@
               <div class="title earth"><h1 class="title earth">Montaño</h1></div>
           </div>
           </div>
-          <button class="tablink fire" onclick="openNav('files', this, '#300000')" id="defaultOpen">Files</button>
-          <button class="tablink wind" onclick="openNav('music', this, '#2e3241')">Music</button>
-          <button class="tablink water" onclick="openNav('photo', this, '#000048')">Photos</button>
-          <button class="tablink earth" onclick="openNav('videos', this, '#001c0a')">Videos</button>    
+          <button class="tablink fire" onclick="openNav('files', this, '#300000', 'fire'); showFire (content)" id="defaultOpen">Files</button>
+          <button class="tablink wind" onclick="openNav('music', this, '#2e3241', 'smoke'); showSmoke (content)">Music</button>
+          <button class="tablink water" onclick="openNav('photo', this, '#000048', 'water'); showWater (content)">Photos</button>
+          <button class="tablink earth" onclick="openNav('videos', this, '#001c0a', 'earth'); showEarth (content)" >Videos</button> 
+          <div class="content" id="fire">
+            <div class="fire-cont">
+              <h2 class="cont-heading">Files</h2>
+              <div class="cont-list">
+                <ul class="fire-list">
+                  <li><a href="#">Documents</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="content" id="smoke">
+            <div class="smoke-cont">
+              <h2 class="cont-heading">Music</h2>
+              <div class="cont-list">
+                <ul class="smoke-list">
+                  <li><a href="#">Top Songs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="content" id="water">
+            <div class="water-cont">
+              <h2 class="cont-heading">Photos</h2>
+              <div class="cont-list">
+                <ul class="water-list">
+                  <li><a href="#">DSLR Photos</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="content" id="earth">
+            <div class="earth-cont">
+              <h2 class="cont-heading">Videos</h2>
+              <div class="cont-list">
+                <ul class="earth-list">
+                  <li><a href="https://www.netflix.com/browse">Netflix</a></li>
+                  <li><a href="https://www.paramountplus.com/home/">Paramount+</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
     </div>
     <script src="../script.js"></script>
 </body>
