@@ -263,6 +263,12 @@ audio {
     margin-top: 8%;
     margin-inline: auto;
 }
+.fire-head{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 21pt;
+    letter-spacing: 3px;
+    color: rgb(135, 156, 239);
+}
 #fire{
     
 }

@@ -2,7 +2,7 @@ body {
     width: 100%;
     background-repeat: no-repeat;
     background-color: #000000;
-    background-image: linear-gradient(0deg, #000000 0%, #131313 30%, #000000 100%);
+    background-image: linear-gradient(0deg, #030303 0%, #171717 30%, #000000 100%);
     color:#fff
 }
 .title-container {
@@ -73,7 +73,6 @@ h1.title {
       background-color: rgb(0,0,0); /* Fallback color */
       background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
       padding-top: 60px;
-      text-align: center;
     }
     
     /* Modal Content/Box */
@@ -82,7 +81,7 @@ h1.title {
       background-image: linear-gradient(340deg, #b7b7b7 0%, #495466 100%);        
       margin: 5px auto; /* 15% from the top and centered */
       border: 4px outset #888;
-      width:60%; /* Could be more or less, depending on screen size */
+      width:75%; /* Could be more or less, depending on screen size */
       border-radius: 4px;
     }
     
@@ -91,10 +90,10 @@ h1.title {
       /* Position it in the top right corner outside of the modal */
       position: absolute;
       color: #000;
-      font-size: 35px;
+      font-size: 2.5vw;
       font-weight: bold;
-      top: 10%;
-      right:21%;
+      top: 12%;
+      right:14%;
       border:1px solid black;
       border-radius: 2px;
       height: fit-content;
@@ -125,6 +124,10 @@ h1.title {
       from {transform: scale(0)}
       to {transform: scale(1)}
     } 
+    .imgcontainer{
+        display: flex;
+        justify-content: center;
+    }
     .container-one {
         display: flex;
         justify-content: space-around;
@@ -139,6 +142,7 @@ h1.title {
         margin-bottom: 5%;
         flex-wrap: wrap;
         padding-inline: 8px;
+        max-height: 35px;
     }
     a.forgot {
         color: rgb(110, 152, 231);
@@ -169,12 +173,25 @@ h1.title {
         outline: 2px double rgb(33, 53, 61);
         
     }
+    .main-button:active {
+        transform: translateY(1px);
+    }
     .login-button {
         width:11%;
         font-weight: 600;
         letter-spacing: .75px;
         font-size:.95vw;
         cursor: pointer;
+        max-height: 2.3vw;
+    }
+    .login-button:hover{
+        background-color: rgb(214, 214, 214);
+        border: 1px solid rgb(133, 133, 133);
+        border-radius: 2px;
+    }
+    .login-button:active {
+        transform: translateY(1px);
+        border: 2px inset rgb(133, 133, 133);
     }
     .cancel-button{
         width:7vw;
@@ -182,6 +199,15 @@ h1.title {
         letter-spacing: 1px;
         height:2em;
         font-size: 1.25vw;
+        cursor: pointer;
+    }
+    .cancel-button:active {
+        transform: translateY(1px);
+    }
+    .cancel-button:hover{
+        background-color: rgb(203, 202, 202);
+        border: 1px inset darkgray;
+        border-radius: 2px;
     }
     .remember-me {
         font-size: 1.25vw;
@@ -190,4 +216,12 @@ h1.title {
     a {
         text-decoration: none;
         color:inherit;
+    }
+    input {
+        max-height: 16pt;
+        color:#131313;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: 500;
+        font-size: 1.5vw;
+        width: max-content;
     }
