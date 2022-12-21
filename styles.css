@@ -163,6 +163,7 @@ h1.title {
         font-size: 1.75vw;
         border-radius: 4px;
         cursor: pointer;
+        border:1.5px solid white;
     }
     /* background affect on over*/
     .main-button:hover {
