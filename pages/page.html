@@ -82,9 +82,70 @@
             <div class="water-cont">
               <h2 class="cont-heading">Photos</h2>
               <div class="cont-list">
-                <ul class="water-list">
-                  <li><a target="_blank" href="#">DSLR Photos</a></li>
-                </ul>
+                <div class="container">
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="../img/Majestic.jpeg" style="width:100%; object-fit: contain; height: 35vw;">
+                  </div>
+                
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="../img/looking_away.jpeg" style="width:100%; object-fit: contain; height: 35vw;">
+                  </div>
+                
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="../img/too_close.jpeg" style="width:100%; object-fit: contain; height: 35vw;">
+                  </div>
+                    
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="../img/cute_kitty.JPG" style="width:100%; object-fit: contain; height: 35vw;">
+                  </div>
+                
+                  <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="../img/sneaky.JPEG" style="width:100%; object-fit: contain; height: 35vw;">
+                  </div>
+                    
+                  <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="../img/Meanie.JPEG" style="width:100%; object-fit: contain; height: 35vw;">
+                  </div>
+                    
+                  <a class="prev" onclick="plusSlides(-1)">❮</a>
+                  <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                
+                  <div class="row">
+                    <div class="column">
+                      <img class="demo cursor" src="../img/Majestic.jpeg"  style="width:10vw; min-width:16%; height:10vw" onclick="currentSlide(1)" alt="The Woods">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="../img/looking_away.jpeg"  style="width:10vw; min-width:16%; height:10vw" onclick="currentSlide(2)" alt="Cinque Terre">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="../img/too_close.jpeg"  style="width:10vw; min-width:16%; height:10vw" onclick="currentSlide(3)" alt="Mountains and fjords">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="../img/cute_kitty.JPG"  style="width:10vw; min-width:16%; height:10vw" onclick="currentSlide(4)" alt="Northern Lights">
+                    </div>
+                    <div class="column">
+                      <img class="demo cursor" src="../img/sneaky.JPEG"  style="width:10vw; min-width:16%; height:10vw" onclick="currentSlide(5)" alt="Nature and sunrise">
+                    </div>    
+                    <div class="column">
+                      <img class="demo cursor" src="../img/Meanie.JPEG"   style="width:10vw; min-width:16%; height:10vw" onclick="currentSlide(6)" alt="Snowy Mountains">
+                    </div>
+                    <div class="column button">
+                      <form>
+                        <input type="button" value="Add a picture" />
+                      </form>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
