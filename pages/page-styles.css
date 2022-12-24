@@ -326,6 +326,7 @@ li.fire-float:active{
 }
 li.earth-listings {
     border:2px outset #aaaab0;
+    box-shadow: 1px 1px 2px black;
     min-width:150px;
     min-height:150px;
     margin-top: 20px;
