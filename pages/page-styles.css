@@ -500,10 +500,10 @@ li.earth-listings:hover {
     font-weight: 500;
     color: rgba(255, 255, 255, 0.939);
     text-shadow: 1px 1px 2px black;
-    font-size: 16pt;
     margin-top: 10%;
     align-items: center;
     height:80px;
+    padding-inline: 10%;
   }
   .footer:hover, .footer:active {
     background-image: url("https://www.memo.tv/wpmemo/wp-content/uploads/2018/07/waves2015c_64c.gif");
@@ -512,10 +512,10 @@ li.earth-listings:hover {
     background-size: cover;
     background-position-y: 58%;
     background-position-x: 69%;
-    animation: fadeIn 2s ease-in;
+    animation: fadeIn 1.2s ease-in;
 }
 @keyframes fadeIn {
-    0% { opacity: 0; }
+    0% { opacity: 0.15; }
     100% { opacity: 1; }
   }
   .alex{
@@ -525,6 +525,7 @@ li.earth-listings:hover {
     height:max-content;
     width:max-content;
     cursor:crosshair;
+    font-size: 1.4vw;
   }
   .feedback:hover{
     transform:scale(110%);
