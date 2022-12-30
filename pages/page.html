@@ -168,7 +168,7 @@
           <div class ="footer">
             <div class="feedback"><a href="#" onclick="document.getElementById('feed').style.display='block'">feedback</a></div>
             <div class="alex">Created by Alex Montaño</div>
-            <div class="logout">logout</div>
+            <div class="logout"><a id="logout" href="../index.html" onclick="javascript:alert('Logging out of Profile');">logout</a></div>
           </div>
           <div id="feed" class="modal">
             <span onclick="document.getElementById('feed').style.display='none'"
@@ -178,16 +178,19 @@
             <div class="feed-body">
               <div class="names">
                 <label for="firstName"><b>First Name:</b></label>
-                <input  type="text" placeholder="Enter First name" name="firstName" required>
+                <input style="font-size:1.6vw;background-color: #cdcdcd;" type="text" placeholder="Enter First name" name="firstName" required>
                 <label for="lastName"><b>Last Name:</b></label>
-                <input  type="text" placeholder="Enter Last Name" name="lastName"><br>
+                <input style="font-size:1.6vw;background-color: #cdcdcd;" type="text" placeholder="Enter Last Name" name="lastName"><br>
               </div>
               <div class="subject">
               <label for="subject"><b>Subject:</b></label><br>
               <input class="feed-sub" type="text" placeholder="Subject" name="subject"><br>
               </div>
-              <label for="subject"><b>Comment:</b></label><br>
-              <input class="feed-comment" type="text" placeholder="Thank you for your Feedback..." name="comment"><br>
+              <div class="comments">
+                <b>Comments:</b>
+                <textarea placeholder="Thank you for your Feedback..." name="comments" class="text-box" >
+                </textarea>
+                </div>
             </div>
           </form>
     </div>
