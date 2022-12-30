@@ -166,10 +166,30 @@
             </div>
           </div>
           <div class ="footer">
-            <div class="feedback">feedback</div>
+            <div class="feedback"><a href="#" onclick="document.getElementById('feed').style.display='block'">feedback</a></div>
             <div class="alex">Created by Alex Montaño</div>
-            <div class="register">Register</div>
+            <div class="logout">logout</div>
           </div>
+          <div id="feed" class="modal">
+            <span onclick="document.getElementById('feed').style.display='none'"
+          class="close" title="Close Login">&times;</span>
+          <form class="modal-content animate" action="/action_page.php">
+            <h3 class="feed-title">Feedback</h3>
+            <div class="feed-body">
+              <div class="names">
+                <label for="firstName"><b>First Name:</b></label>
+                <input  type="text" placeholder="Enter First name" name="firstName" required>
+                <label for="lastName"><b>Last Name:</b></label>
+                <input  type="text" placeholder="Enter Last Name" name="lastName"><br>
+              </div>
+              <div class="subject">
+              <label for="subject"><b>Subject:</b></label><br>
+              <input class="feed-sub" type="text" placeholder="Subject" name="subject"><br>
+              </div>
+              <label for="subject"><b>Comment:</b></label><br>
+              <input class="feed-comment" type="text" placeholder="Thank you for your Feedback..." name="comment"><br>
+            </div>
+          </form>
     </div>
     <script src="../script.js"></script>
 </body>

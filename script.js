@@ -99,3 +99,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+// Get the modal for Feedback
+let feedback = document.getElementById('feed');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(feeds) {
+  if (feeds.target == feedback) {
+    feedback.style.display = "none";
+  }
+}

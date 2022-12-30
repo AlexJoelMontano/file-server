@@ -527,9 +527,89 @@ li.earth-listings:hover {
     width:max-content;
     cursor:crosshair;
   }
- /* .alex:hover{
-    background-image: url("https://www.memo.tv/wpmemo/wp-content/uploads/2018/07/waves2015c_64c.gif");
-    filter:grayscale(100%);
-    background-position-y: 58%;
-    background-position-x: 69%;
-  }*/
+  /* The Feedback Modal (background) */
+ .modal {
+    
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #b7b7b7;
+  background-image: linear-gradient(340deg, #b7b7b7 0%, #495466 100%);        
+  margin: 5px auto; /* 15% from the top and centered */
+  border: 4px outset #888;
+  width:75%; /* Could be more or less, depending on screen size */
+  border-radius: 4px;
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  color: #000;
+  font-size: 2.5vw;
+  font-weight: bold;
+  top: 12%;
+  right:14%;
+  border:1px solid black;
+  border-radius: 2px;
+  height: fit-content;
+  padding-inline: 6px;
+  background-color: #b7b7b7;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+/* Add Zoom Animation */
+.animate {
+ -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+} 
+.feed-body{
+  color:#000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  padding-inline:10%;
+}
+.names{
+  display:flex;
+  justify-content: space-evenly;
+}
+.feed-sub{
+  margin-left:10%;
+  width:90%;
+}
+.subject{
+  display:flex 2 1 auto;
+  flex-wrap: wrap;
+}
+.feed-comment{
+  width:100%;
+}
